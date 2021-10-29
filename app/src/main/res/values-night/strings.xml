@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sqr2">˄2</string>
+    <string name="sqr2_">sqr2</string>
+    <string name="_1">1</string>
+    <string name="clear">Clear</string>
+    <string name="sqr3">sqr3</string>
+    <string name="rightSlash">/</string>
+    <string name="_3">3</string>
+    <string name="_9">9</string>
+    <string name="plus">+</string>
+    <string name="dot">.</string>
+    <string name="_0">0</string>
+    <string name="equal">=</string>
+</resources>
