@@ -5,6 +5,10 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import kotlin.math.log10
+import kotlin.math.pow
+import kotlin.math.sqrt
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -88,9 +92,12 @@ class MainActivity : AppCompatActivity() {
                     "-" -> resultTextView.text = (operand - secondOperand).toString()
                     "*" -> resultTextView.text = (operand * secondOperand).toString()
                     "/" -> resultTextView.text = (operand / secondOperand).toString()
-                    "sqr2"->resultTextView.text = (operand*operand).toString()
-                    "sqr3"->resultTextView.text = (operand*operand*operand).toString()
-
+                    "˄2"->resultTextView.text = operand.pow(2.0).toString()
+                    "˄3"->resultTextView.text = operand.pow(3.0).toString()
+                    "˄x"->resultTextView.text = operand.pow(secondOperand).toString()
+                    "√"->resultTextView.text = sqrt(operand).toString()
+                    "∛"->resultTextView.text = Math.cbrt(operand).toString()
+                    "log"->resultTextView.text = (log10(operand)).toString()
                 }
             }
         }

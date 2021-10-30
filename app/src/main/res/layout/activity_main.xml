@@ -28,76 +28,131 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/white">
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:orientation="horizontal"
             android:weightSum="4">
             <TextView
                 android:layout_width="wrap_content"
                 android:onClick="clearClick"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="#605A5A"
                 android:gravity="center"
-                android:text="@string/clear"
+                android:text="C"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:layout_margin="1dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
                 android:background="#605A5A"
                 android:gravity="center"
                 android:onClick="operationClick"
-                android:text="@string/sqr2_"
+                android:text="√"
                 android:textColor="@color/white"
                 android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
                 android:background="#605A5A"
                 android:gravity="center"
                 android:onClick="operationClick"
-                android:text="@string/sqr3"
+                android:text="∛"
                 android:textColor="@color/white"
                 android:textSize="30sp" />
 
             <TextView
-                android:onClick="operationClick"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
+                android:layout_margin="1dp"
                 android:layout_weight="1"
                 android:background="#605A5A"
                 android:gravity="center"
-                android:text="@string/rightSlash"
+                android:onClick="operationClick"
+                android:text="log"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+            <TextView
+                android:layout_width="wrap_content"
+                android:onClick="operationClick"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="#605A5A"
+                android:gravity="center"
+                android:text="˄x"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:layout_margin="1dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#605A5A"
+                android:gravity="center"
+                android:onClick="operationClick"
+                android:text="˄2"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#605A5A"
+                android:gravity="center"
+                android:onClick="operationClick"
+                android:text="˄3"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#605A5A"
+                android:gravity="center"
+                android:onClick="operationClick"
+                android:text="/"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
         </LinearLayout>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="80dp"
             android:weightSum="4">
 
             <TextView
                 android:onClick="numberClick"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@color/black"
                 android:gravity="center"
-                android:text="@string/_1"
+                android:text="1"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:layout_margin="1dp"/>
@@ -105,11 +160,11 @@
             <TextView
                 android:onClick="numberClick"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@color/black"
                 android:gravity="center"
-                android:text="@string/_2"
+                android:text="2"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:layout_margin="1dp"/>
@@ -117,11 +172,11 @@
             <TextView
                 android:onClick="numberClick"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@color/black"
                 android:gravity="center"
-                android:text="@string/_3"
+                android:text="3"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:layout_margin="1dp"/>
@@ -129,11 +184,11 @@
             <TextView
                 android:onClick="operationClick"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="#DF625C5C"
                 android:gravity="center"
-                android:text="@string/Multiply"
+                android:text="*"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:layout_margin="1dp"/>
@@ -141,17 +196,18 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="80dp"
             android:weightSum="4">
 
+
             <TextView
                 android:onClick="numberClick"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@color/black"
                 android:gravity="center"
-                android:text="@string/_4"
+                android:text="4"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:layout_margin="1dp"/>
@@ -159,11 +215,11 @@
             <TextView
                 android:onClick="numberClick"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@color/black"
                 android:gravity="center"
-                android:text="@string/_5"
+                android:text="5"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:layout_margin="1dp"/>
@@ -171,11 +227,11 @@
             <TextView
                 android:onClick="numberClick"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@color/black"
                 android:gravity="center"
-                android:text="@string/_6"
+                android:text="6"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:layout_margin="1dp"/>
@@ -183,11 +239,11 @@
             <TextView
                 android:onClick="operationClick"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="#DF625C5C"
                 android:gravity="center"
-                android:text="@string/minus"
+                android:text="-"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:layout_margin="1dp"/>
@@ -195,17 +251,17 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="80dp"
             android:weightSum="4">
 
             <TextView
                 android:onClick="numberClick"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@color/black"
                 android:gravity="center"
-                android:text="@string/_7"
+                android:text="7"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:layout_margin="1dp"/>
@@ -213,11 +269,11 @@
             <TextView
                 android:onClick="numberClick"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@color/black"
                 android:gravity="center"
-                android:text="@string/_8"
+                android:text="8"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:layout_margin="1dp"/>
@@ -225,11 +281,11 @@
             <TextView
                 android:onClick="numberClick"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@color/black"
                 android:gravity="center"
-                android:text="@string/_9"
+                android:text="9"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:layout_margin="1dp"/>
@@ -237,11 +293,11 @@
             <TextView
                 android:onClick="operationClick"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="#DF625C5C"
                 android:gravity="center"
-                android:text="@string/plus"
+                android:text="+"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:layout_margin="1dp"/>
@@ -252,14 +308,15 @@
             android:layout_height="match_parent"
             android:weightSum="4">
 
+
             <TextView
                 android:onClick="numberClick"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@color/black"
                 android:gravity="center"
-                android:text="@string/dot"
+                android:text="."
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:layout_margin="1dp"/>
@@ -267,11 +324,11 @@
             <TextView
                 android:onClick="numberClick"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@color/black"
                 android:gravity="center"
-                android:text="@string/_0"
+                android:text="0"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:layout_margin="1dp"/>
@@ -279,22 +336,22 @@
             <TextView
                 android:onClick="delClick"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@color/black"
                 android:gravity="center"
-                android:text="@string/del"
+                android:text="del"
                 android:textColor="@color/white"
                 android:textSize="30sp" />
 
             <TextView
                 android:onClick="equalsClick"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="#DFF42626"
                 android:gravity="center"
-                android:text="@string/equal"
+                android:text="="
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:layout_margin="1dp"/>
